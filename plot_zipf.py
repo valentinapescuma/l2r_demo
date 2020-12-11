@@ -12,7 +12,7 @@ def get_n_most_frequent_words(freqs, n):
 	words_freqs = []
 	for word, freq in freqs.items():
 		words_freqs.append((freq, word))
-	words_freqs.sort(reverse=False)
+	words_freqs.sort(reverse=True)
 	return words_freqs[:n]
 
 def plot_freq_against_rank(most_frequent_words):
