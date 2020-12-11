@@ -18,7 +18,6 @@ def get_n_most_frequent_words(freqs, n):
 def plot_freq_against_rank(most_frequent_words):
 	frequencies = [freq for freq, _ in most_frequent_words]
 	ranks = range(1, len(frequencies)+1)
-	plt.plot(ranks, frequencies)
 	plt.plot(log(ranks), log(frequencies))
 	plt.xlabel('Rank')
 	plt.ylabel('Frequencies')
